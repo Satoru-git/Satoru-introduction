@@ -1,0 +1,369 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=M+PLUS+Rounded+1c&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+li {
+  list-style: none;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h3 {
+  font-size: 2rem;
+}
+:root {
+  --black: rgb(30, 18, 16);
+  --yellow: rgb(255, 226, 0);
+  --green: rgb(195, 216, 45);
+}
+.video {
+  height: 100vh;
+  object-fit: cover;
+}
+.video video {
+  position: fixed;
+  /* top: -750px;
+  left: -900px; */
+  z-index: -10;
+}
+.title {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-family: 'Rye', cursive;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 400px;
+  font-size: 1.6rem;
+  color: var(--yellow);
+  border: 1px solid var(--green);
+  text-shadow: 2px -1px 4px var(--green);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: -10;
+}
+.video p {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  font-family: 'Rye', cursive;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 400px;
+  font-size: 3rem;
+  color: var(--yellow);
+  text-shadow: 2px -2px 4px var(--green);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#problem-description {
+  position: relative;
+  padding-bottom: 80px;
+  background-color: white;
+  text-align: center;
+  z-index: 10;
+}
+
+#problem-description h1 {
+  font-size: 2rem;
+  padding-top: 40px;
+  margin-bottom: 120px;
+}
+.first {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  background-image: url(./img/背景2.jpg);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: lighten;
+  font-size: 1.8rem;
+  text-shadow: 3px 3px 3px #000;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.first h1 {
+  margin-bottom: 0;
+}
+.exchange {
+  width: 100%;
+  position: relative;
+}
+.exchange img {
+  width: 100%;
+}
+.exchange .person {
+  width: 70%;
+}
+.kikaika {
+  width: 70%;
+  height: 100px;
+  margin-left: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hinshitsuka {
+  width: 70%;
+  margin: 0 400px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kikai {
+  width: 20%;
+  text-align: center;
+}
+.request {
+  width: 90%;
+  height: 40px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(85, 85, 85, 1),
+    rgba(0, 0, 0, 1)
+  );
+  border-style: inherit;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.4s;
+}
+.request:hover {
+  scale: 1.2;
+  opacity: 1;
+}
+.work {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: white;
+  transition: all 1s;
+}
+.work img {
+  width: 100%;
+}
+.work .d4 {
+  width: 40%;
+}
+.cvj {
+  display: flex;
+}
+.balloon {
+  position: relative;
+  background: #d1e8fd;
+  width: 46%;
+  height: 20px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.balloon:after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: 0;
+  bottom: 0;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  border-style: solid;
+  border-color: transparent transparent transparent #d1e8fd;
+  border-width: 20px 0 20px 20px;
+}
+
+.exchange .request-paper {
+  width: 14%;
+  position: absolute;
+  top: 500px;
+  right: 45%;
+  border: 1px solid black;
+}
+.hinshitsuka .balloon:after {
+  right: 0;
+  left: -105%;
+  border-color: transparent #d1e8fd transparent transparent;
+  border-width: 20px 20px 20px 0;
+}
+
+.next {
+  margin-top: 150px;
+}
+
+h2 {
+  margin: 40px 0;
+}
+
+.idea {
+  margin: 0 auto;
+}
+
+.idea .person {
+  margin-top: 10px;
+  width: 100%;
+}
+p > span {
+  color: red;
+  font-weight: bold;
+}
+
+#summarize {
+  padding: 0.7rem;
+  border: 1px solid rgb(193, 238, 108);
+  background-color: var(--black);
+  color: var(--green);
+  border-radius: 20px;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  position: relative;
+}
+#summarize h3 {
+  margin: 20px 0;
+  font-size: 1.8rem;
+}
+#summarize img {
+  width: 14%;
+  border-radius: 10%;
+}
+.gojo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#application {
+  width: 100%;
+  height: 100%;
+  background: url(./img/レンガ.jpg) no-repeat center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+.app_lv1 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.app_title {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  letter-spacing: 1.4rem;
+  font-size: 1.8rem;
+  font-family: 'Chewy', cursive;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.app_link {
+  display: block;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.7rem;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 25px;
+  line-height: 22px;
+  letter-spacing: 0.6rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.app_link:hover {
+  color: #b1c6ff;
+}
+.app_lv2 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.swiper {
+  width: 90%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.swiper-slide .flowchart {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.swiper-slide .flowchart li {
+  width: 50%;
+  text-align: center;
+}
+.swiper-slide .flowchart li img {
+  width: 60%;
+}
+.swiper-slide .item {
+  display: flex;
+  justify-content: center;
+}
+.swiper-slide .item li {
+  width: 50%;
+}
+.swiper-slide .item li:last-child {
+  width: 30%;
+  margin-left: 10px;
+}
+.swiper-slide .item li video {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide .item li .description {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #000;
+  color: #fd9b3f;
+}
+.swiper-slide .item li .description h2 {
+  margin: 0 0 20px 0;
+  font-size: 1.3vmax;
+  text-align: center;
+}
+.swiper-slide .item li .description p {
+  font-size: 1vmax;
+}
+.end {
+  display: block;
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+  color: #fff;
+}

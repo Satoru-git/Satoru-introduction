@@ -1,0 +1,398 @@
+@charset 'utf-8';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: rgb(206, 215, 220);
+}
+main {
+  max-width: 1200px;
+  margin: 0.5rem auto;
+  /* border: 1px solid black; */
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+label {
+  font-size: 1.4rem;
+}
+input {
+  font-size: 1.6rem;
+}
+
+/* ***************************************** */
+.miyoshi {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+.requester {
+  width: 49%;
+  padding: 2rem 1rem;
+  background-color: white;
+  border: 1px solid black;
+  position: relative;
+}
+.previous-data {
+  position: absolute;
+  top: 74px;
+  right: 2%;
+  margin-top: 2px;
+  border: none;
+  border-radius: 20px;
+  width: 20%;
+  height: 2rem;
+  color: white;
+  font-size: 1.2rem;
+  background-image: linear-gradient(
+    270deg,
+    rgba(247, 93, 139, 1),
+    rgb(250, 138, 86)
+  );
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.previous-data:hover {
+  opacity: 0.7;
+  scale: 1.1;
+}
+.request-dt {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.request-dt div {
+  width: calc(98% / 3);
+}
+
+.request-dt input {
+  width: 100%;
+  height: 4rem;
+  text-align: center;
+}
+.partdetail {
+  display: grid;
+  grid-template-columns: 2.5fr 0.5fr;
+}
+.partdetail input {
+  width: 90%;
+  height: 2.5rem;
+  margin-top: 10px;
+}
+.partnumber {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.partnumber span {
+  width: 90%;
+  height: 40px;
+  border: 1px solid rgb(133, 133, 133);
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.6rem;
+}
+.partnumber--text {
+  color: gray;
+}
+.qty {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  text-align: center;
+  margin-top: 0;
+  height: 100%;
+}
+.qty input {
+  margin-top: 0;
+  height: 60%;
+  text-align: center;
+}
+.partname {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.partname select {
+  width: 90%;
+  height: 2.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.porpose {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.porpose label {
+  /* display: block; */
+  width: 52px;
+  text-align: left;
+}
+.porpose select {
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.machine {
+  display: flex;
+  justify-content: space-between;
+}
+.machine-num {
+  text-align: center;
+  width: 60%;
+}
+#machine-num {
+  width: 100%;
+  text-align: center;
+}
+.datetime {
+  margin-left: 5%;
+}
+.datetime input {
+  width: 100%;
+  text-align: center;
+}
+.measurement-item {
+  margin-top: 10px;
+  width: 100%;
+  min-height: 350px;
+  border: 1px solid black;
+  padding: 10px 20px 10px 40px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: left;
+}
+.measurement-item span {
+  color: gray;
+}
+.measurement-item ul {
+  margin-top: 10px;
+}
+.measurement-item li {
+  margin: 10px 20px;
+  font-weight: normal;
+  font-size: 1.4rem;
+  list-style: inside;
+}
+button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 80%;
+  height: 4rem;
+  color: white;
+  font-size: 1.4rem;
+  background: linear-gradient(90deg, rgba(85, 85, 85, 1), rgba(0, 0, 0, 1));
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  opacity: 0.7;
+  scale: 1.1;
+}
+.table-content {
+  display: flex;
+  flex-direction: column;
+}
+.table {
+  width: 49%;
+}
+select {
+  /* color: white; */
+  cursor: pointer;
+}
+select:focus {
+  outline: none;
+}
+option {
+  color: black;
+  background-color: white;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0.4rem 0.6rem;
+}
+table {
+  width: 100%;
+  background-color: white;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.number-of-Request {
+  text-align: right;
+}
+
+.request-paper {
+  max-width: 32px;
+}
+.work {
+  min-width: 100px;
+}
+.request {
+  min-width: 140px;
+}
+
+.person {
+  max-width: 30px;
+}
+.result {
+  min-width: 100px;
+}
+.info {
+  min-width: 60px;
+}
+.request-time {
+  min-width: 100px;
+}
+.complete-time {
+  min-width: 100px;
+}
+#result {
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+}
+.info-deploy {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 6px;
+  font-size: 1rem;
+  background-color: #0093e9;
+  background-image: linear-gradient(315deg, #0093e9 0%, #80d0c7 100%);
+}
+.fake-img {
+  padding: 0;
+}
+.fake-img--button {
+  background: none;
+}
+.fake-img img {
+  width: 90%;
+}
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+}
+.img img {
+  position: absolute;
+  width: 30%;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.hidden {
+  display: none;
+}
+
+.closebtn {
+  position: absolute;
+  top: 2%;
+  right: 32%;
+  cursor: pointer;
+}
+.close--button {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 3px;
+  background: rgb(243, 88, 88);
+  z-index: 20;
+}
+
+.close--button::before,
+.close--button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  height: 27px;
+  background: white;
+}
+
+.close--button::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close--button::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.next-innovation {
+  position: absolute;
+  top: 90%;
+  right: 20%;
+  width: 200px;
+  height: 70px;
+  line-height: 70px;
+  margin-left: 70%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.next-innovation a {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid;
+  /* padding: calc(50% - 36px) 0;
+  border-radius: 50%; */
+  position: relative;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+
+.next-innovation a::before {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  transition: all 0.6s ease-out;
+}
+.next-innovation a:hover::before {
+  left: 0;
+}
+.next-innovation a:hover {
+  color: #0093e9;
+  font-weight: bold;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Request Form</title>
+  </head>
+  <body>
+    <main>
+      <div class="requester">
+        <h1>測定依頼書<span class="miyoshi">三好品質課</span></h1>
+        <button class="previous-data">前回複写</button>
+        <form action="/miyoshi" class="requester--form">
+          <div class="request-dt">
+            <div>
+              <p>
+                <label for="request-dt">依頼部署</label>
+              </p>
+              <input
+                type="text"
+                id="request-dt"
+                placeholder="例: LP-224"
+                required
+              />
+            </div>
+            <div>
+              <p>
+                <label for="request-person">依頼者</label>
+              </p>
+              <input
+                type="text"
+                id="request-person"
+                placeholder="例: 大渕"
+                required
+              />
+            </div>
+            <div>
+              <p>
+                <label for="request-phone">連絡先</label>
+              </p>
+              <input
+                type="tel"
+                id="request-phone"
+                placeholder="例: 5323"
+                required
+              />
+            </div>
+          </div>
+          <div class="partdetail">
+            <div class="partnumber">
+              <label for="partnumber">品番</label>
+              <span id="partnumber" class="partnumber--text">自動入力</span>
+            </div>
+            <div class="qty">
+              <label for="qty">数量</label>
+              <input type="number" id="qty" min="1" required />
+            </div>
+            <div class="partname">
+              <label for="partname">品名</label>
+              <select name="partname" id="partname" required>
+                <option value=""></option>
+                <option value="ボディAssy">ボディAssy</option>
+                <option value="インボード">インボード</option>
+                <option value="アウター">アウター</option>
+              </select>
+            </div>
+          </div>
+          <div class="porpose">
+            <label for="porpose">目的</label>
+            <select name="porpose" id="porpose" required>
+              <option value=""></option>
+              <option value="中仕上げ砥石交換">中仕上げ砥石交換</option>
+              <option value="仕上げ砥石交換">仕上げ砥石交換</option>
+            </select>
+          </div>
+          <div class="machine">
+            <div class="machine-num">
+              <label for="machine">機番</label>
+              <input
+                id="machine-num"
+                type="text"
+                placeholder="例: GR-7321"
+                required
+              />
+            </div>
+            <div class="datetime">
+              <label for="hope-complete">完了希望</label>
+              <input id="hope-complete" type="datetime-local" required />
+            </div>
+          </div>
+
+          <div class="measurement-item">
+            <p>< 測定項目 ><span>（ 自動入力 ）</span></p>
+            <ul class="measurement-list"></ul>
+          </div>
+          <button class="request-btn">受付依頼</button>
+        </form>
+      </div>
+
+      <div class="table">
+        <h1>突発依頼受付<span class="miyoshi">三好品質課</span></h1>
+        <h3 class="number-of-Request">依頼件数 : 3 件</h3>
+        <table>
+          <thead>
+            <tr>
+              <th class="request-paper">依頼書</th>
+              <th class="work">ワーク</th>
+              <th class="request">依頼内容</th>
+              <th class="request-time">受付時間</th>
+              <th class="complete-time">完了希望</th>
+              <th class="person">受付者</th>
+              <th class="result">合否</th>
+              <th class="info">情報<br />展開</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="request-list">
+              <td class="fake-img">
+                <button class="fake-img--button">
+                  <img src="./img/依頼書1.png" alt="" />
+                </button>
+              </td>
+              <td>アウター</td>
+              <td>仕上げ砥石交換</td>
+              <td>2023/07/02 09:30</td>
+              <td>2023/07/12 16:50</td>
+              <td>大渕</td>
+              <td>
+                <select name="result" id="result">
+                  <option value="未測定">未測定</option>
+                  <option value="OK">OK</option>
+                  <option value="NG">NG</option>
+                </select>
+              </td>
+              <td>
+                <button class="info-deploy">済</button>
+              </td>
+            </tr>
+            <tr class="request-list">
+              <td class="fake-img">
+                <button class="fake-img--button">
+                  <img src="./img/依頼書1.png" alt="" />
+                </button>
+              </td>
+              <td>ボディAssy</td>
+              <td>仕上げ砥石交換</td>
+              <td>2023/07/02 08:30</td>
+              <td>2023/07/12 16:50</td>
+              <td>大渕</td>
+              <td>
+                <select name="result" id="result">
+                  <option value="未測定">未測定</option>
+                  <option value="OK">OK</option>
+                  <option value="NG">NG</option>
+                </select>
+              </td>
+              <td>
+                <button class="info-deploy">済</button>
+              </td>
+            </tr>
+            <tr class="request-list">
+              <td class="fake-img">
+                <button class="fake-img--button">
+                  <img src="./img/依頼書1.png" alt="" />
+                </button>
+              </td>
+              <td>インボード</td>
+              <td>仕上げ砥石交換</td>
+              <td>2023/07/02 08:00</td>
+              <td>2023/07/12 16:50</td>
+              <td>大渕</td>
+              <td>
+                <select name="result" id="result">
+                  <option value="未測定">未測定</option>
+                  <option value="OK">OK</option>
+                  <option value="NG">NG</option>
+                </select>
+              </td>
+              <td>
+                <button class="info-deploy">済</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="img hidden">
+          <img src="./img/依頼書1.png" alt="" />
+          <div class="closebtn">
+            <span class="close--button"></span>
+          </div>
+        </div>
+      </div>
+      <div class="next-innovation">
+        <a href="../NewRequest/login.html" target="_blank"> NextInnovation </a>
+      </div>
+    </main>
+    <div class="mask hidden"></div>
+    <script src="./main.js"></script>
+  </body>
+</html>

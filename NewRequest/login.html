@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <title>NextInnovation</title>
+  </head>
+  <body>
+    <div class="login">
+      <div class="video">
+        <video
+          src="./img/pexels-lachlan-ross-8775687-1920x1080-25fps.mp4"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+      <div class="login-form">
+        <form action="#">
+          <label for="department-code" id="department-code">所属コード</label>
+          <input type="text" maxlength="5" placeholder="LP224" required />
+          <label for="username" id="username">ユーザー名</label>
+          <input type="text" required />
+          <button class="login-btn">ログイン</button>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="request">
+        <header id="request-header">
+          <div class="site-title">
+            <h1>NEW Request</h1>
+            <!-- <p>こんにちは satoruさん</p> -->
+          </div>
+          <nav id="navi">
+            <ul class="cvj--work">
+              <li class="list-name">CVJ :</li>
+              <li><a href="#outer">アウター</a></li>
+              <li><a href="#inner">インナー</a></li>
+              <li><a href="#inbord">インボード</a></li>
+              <li><a href="#">ケージ</a></li>
+              <li><a href="#">シャフト</a></li>
+              <li><a href="#">トリポード</a></li>
+            </ul>
+            <ul class="booking">
+              <li>
+                <div class="request-menu">
+                  <span class="request-num">1</span>
+                  <img src="./img/quote-request.png" alt="" />
+                </div>
+                <div class="list request-list hidden">
+                  <ul>
+                    <li>
+                      アウター <br />
+                      LA - 6915
+                      <button class="list-delete">削除</button>
+                    </li>
+                    <li>
+                      アウター <br />
+                      LA - 6919
+                      <button class="list-delete">削除</button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="message-menu">
+                  <span class="message-num">1</span>
+                  <img src="./img/comment.png" alt="" />
+                </div>
+                <div class="list message-list hidden">
+                  <ul class="message-item">
+                    <li>
+                      アウター <br />
+                      LA - 6915
+                      <p
+                        style="background-color: rgb(228, 76, 76)"
+                        class="result"
+                      >
+                        不合格
+                      </p>
+                      <button class="list-delete">削除</button>
+                    </li>
+                    <li>
+                      アウター <br />
+                      LA - 6919
+                      <p
+                        style="background-color: rgb(52, 130, 247)"
+                        class="result"
+                      >
+                        合格
+                      </p>
+                      <button class="list-delete">削除</button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <div class="wrapper">
+            <section id="outer">
+              <h2 class="sec-title">アウター</h2>
+              <div class="process">
+                <span class="slide-btn left hidden">&larr;</span>
+                <span class="slide-btn right">&rarr;</span>
+                <ul>
+                  <li class="slide slide-outer">
+                    <h2>10工程</h2>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>LA - 6915</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            value="1"
+                            min="1"
+                            id="quantity"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>LA - 6919</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="slide slide-outer">
+                    <h2>20工程</h2>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>MM - 2983</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="slide slide-outer">
+                    <h2>30工程</h2>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>MI - 3740</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="slide slide-outer">
+                    <h2>40工程</h2>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>IH - 3968</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="slide slide-outer">
+                    <h2>50工程</h2>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>LA - 5840</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>LA - 6496</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="slide slide-outer">
+                    <h2>60工程</h2>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>MC - 1415</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>MC - 1416</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section id="inner">
+              <h2 class="sec-title">インナー</h2>
+              <div class="process">
+                <span class="slide-btn left hidden">&larr;</span>
+                <span class="slide-btn right">&rarr;</span>
+                <ul>
+                  <li class="slide slide-inner">
+                    <h2>10工程</h2>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>LA - 6131</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="slide slide-inner">
+                    <h2>20工程</h2>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>LA - 6135</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="slide slide-inner">
+                    <h2>30工程</h2>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>BM - 1140</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="slide slide-inner">
+                    <h2>40工程</h2>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>MC - 1411</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>MC - 1412</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section id="inbord">
+              <h2 class="sec-title">インボード</h2>
+              <div class="process">
+                <span class="slide-btn left hidden">&larr;</span>
+                <span class="slide-btn right">&rarr;</span>
+                <ul>
+                  <li class="slide slide-inbord">
+                    <h2>10工程</h2>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>LA - 6913</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>LA - 6914</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="slide slide-inbord">
+                    <h2>20工程</h2>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>MM - 3737</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="slide slide-inbord">
+                    <h2>30工程</h2>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>MM - 3500</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="slide slide-inbord">
+                    <h2>40工程</h2>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>GR - 7252</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                    <div class="item">
+                      <div class="item-machine">
+                        <p>GR - 7277</p>
+                        <span>&#9660;</span>
+                      </div>
+                      <form class="item-detail hidden">
+                        <div class="quantity">
+                          <label for="quantity">数量: </label>
+                          <input
+                            type="number"
+                            min="1"
+                            id="quantity"
+                            value="1"
+                            required
+                          />
+                        </div>
+                        <div class="date">
+                          <label for="date" id="date">完了希望: </label>
+                          <input
+                            type="datetime-local"
+                            class="date-time"
+                            required
+                          />
+                        </div>
+                        <button class="request-btn">測定予約</button>
+                      </form>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+      <div class="table">
+        <header id="table-header">
+          <div class="site-title">
+            <h1>Request Table</h1>
+          </div>
+          <nav id="navi">
+            <h3>依頼件数: <span class="table-num">2</span> 件</h3>
+          </nav>
+        </header>
+        <div class="wrapper">
+          <h2>三好品質課 測定依頼状況</h2>
+          <ul class="table-list">
+            <li>
+              <div class="work-detail">
+                <h2>アウター</h2>
+                <h3>10工程</h3>
+                <p>LA - 6915</p>
+              </div>
+              <div class="time">
+                <p>受付時間 22 : 30</p>
+                <p>完了希望時間 22 : 50</p>
+              </div>
+              <div class="request-detail">
+                <p class="detail"><span>&gt;</span> 詳細を確認</p>
+                <div class="result">
+                  <button class="ok">合格</button>
+                  <button class="ng">不合格</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="work-detail">
+                <h2>インナー</h2>
+                <h3>10工程</h3>
+                <p>LA - 6131</p>
+              </div>
+              <div class="time">
+                <p>受付時間 22 : 30</p>
+                <p>完了希望時間 22 : 50</p>
+              </div>
+              <div class="request-detail">
+                <p class="detail"><span>&gt;</span> 詳細を確認</p>
+                <div class="result">
+                  <button class="ok">合格</button>
+                  <button class="ng">不合格</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mesurement-detail hidden">
+      <span class="round_btn"></span>
+      <div class="mesurement-table">
+        <div class="title">
+          <h2>測定依頼書</h2>
+          <p>三好品質課</p>
+        </div>
+        <table>
+          <tr>
+            <th>依頼部署</th>
+            <th>依頼者</th>
+            <th>連絡先</th>
+          </tr>
+          <tr>
+            <td>LP224</td>
+            <td>satoru</td>
+            <td>5323</td>
+          </tr>
+          <tr>
+            <th>品番</th>
+            <td colspan="2">43418 - 48010</td>
+          </tr>
+          <tr>
+            <th>品名</th>
+            <td colspan="2">アウター</td>
+          </tr>
+          <tr>
+            <th>数量</th>
+            <td colspan="2">1</td>
+          </tr>
+          <tr>
+            <th>目的</th>
+            <td colspan="2">砥石交換</td>
+          </tr>
+          <tr>
+            <th>機番</th>
+            <td colspan="2">GR - 7321</td>
+          </tr>
+          <tr>
+            <th>完了希望</th>
+            <td colspan="2">14:30</td>
+          </tr>
+
+          <tr>
+            <td colspan="3">
+              <h4>< 測定項目 ></h4>
+              <ul class="mesure-item">
+                <li>真円度</li>
+                <li>円筒度</li>
+                <li>真直度</li>
+                <li>面粗度</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Introduction</title>
+  </head>
+  <body>
+    <main>
+      <div class="video">
+        <video
+          src="./img/pexels-pavel-danilyuk-9121382-1920x1080-25fps.mp4"
+          loop
+          autoplay
+          muted
+        ></video>
+
+        <div class="title">
+          <h1>
+            Measurement request <br />～ Rakujan Lv.1 / Lv.2 ～ <br />
+            <h5>え.. なにこれ.. 楽じゃん!!!!</h5>
+          </h1>
+          <br />
+          <p>三好品質課 Satoru Obuchi</p>
+        </div>
+      </div>
+
+      <section id="problem-description">
+        <div class="wrapper">
+          <h1>
+            < 機械課 ⇒ 品質課への測定依頼 > <br />
+            ～ 1/w 砥石交換実施後 ～
+          </h1>
+          <div class="exchange">
+            <div class="kikaika">
+              <div class="balloon">
+                <p>砥石交換したので測定お願いします</p>
+              </div>
+              <div class="kikai">
+                <p>機械課</p>
+                <img class="person" src="./img/機械課.png" alt="" />
+              </div>
+              <div class="work">
+                <p>D4-ボディAssy</p>
+                <img class="d4" src="./img/ボディAssy.jpg" alt="" />
+                <div class="cvj">
+                  <div>
+                    <p>CVJ-アウター</p>
+                    <img src="./img/アウター.jpg" alt="" />
+                  </div>
+                  <div>
+                    <p>CVJ-インボード</p>
+                    <img src="./img/インボード.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hinshitsuka">
+              <div class="kikai">
+                <p>品質課</p>
+                <img class="person" src="./img/品質課.png" alt="" />
+              </div>
+              <div class="balloon"><p>依頼書の記入お願いします</p></div>
+            </div>
+            <div class="kikaika">
+              <div class="balloon">
+                <p><span>（ 毎回測定項目同じなのに・・・）</span></p>
+              </div>
+              <div class="kikai">
+                <p>機械課</p>
+                <img class="person" src="./img/機械課_困り顔.png" alt="" />
+                <button class="request">測定依頼</button>
+              </div>
+              <img class="request-paper" src="./img/依頼書.jpg" alt="" />
+              <div class="work request-work">
+                <p>D4-ボディAssy</p>
+                <img class="d4" src="./img/ボディAssy.jpg" alt="" />
+                <div class="cvj">
+                  <div>
+                    <p>CVJ-アウター</p>
+                    <img src="./img/アウター.jpg" alt="" />
+                  </div>
+                  <div>
+                    <p>CVJ-インボード</p>
+                    <img src="./img/インボード.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hinshitsuka next">
+              <div class="kikai">
+                <p>品質課</p>
+                <img class="person" src="./img/品質課.png" alt="" />
+              </div>
+              <div class="balloon"><p>測定機器の校正後、測定します</p></div>
+            </div>
+            <div class="kikaika">
+              <div class="balloon">
+                <p>
+                  測定結果はまだ出ないの？<br />
+                  生産が遅れちゃうよ・・・
+                </p>
+              </div>
+              <div class="kikai">
+                <p>機械課</p>
+                <img class="person" src="./img/機械課多忙.png" alt="" />
+              </div>
+            </div>
+            <div class="hinshitsuka">
+              <div class="work">
+                <p>D4-ボディAssy</p>
+                <img class="d4" src="./img/ボディAssy.jpg" alt="" />
+                <div class="cvj">
+                  <div>
+                    <p>CVJ-アウター</p>
+                    <img src="./img/アウター.jpg" alt="" />
+                  </div>
+                  <div>
+                    <p>CVJ-インボード</p>
+                    <img src="./img/インボード.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="kikai">
+                <p>品質課</p>
+                <img class="person" src="./img/品質課がっかり.png" alt="" />
+              </div>
+              <div class="balloon">
+                <p>
+                  すみません<br />
+                  もう少しで結果を出せます
+                </p>
+              </div>
+            </div>
+            <h2>測定結果を職制に確認してもらって何とか依頼を完了・・・</h2>
+            <div class="hinshitsuka idea">
+              <div class="kikai">
+                <p>品質課</p>
+                <img class="person" src="./img/品質課困り顔.png" alt="" />
+              </div>
+              <div class="balloon">
+                <p>
+                  <span
+                    >前もって連絡してくれたら<br />測定器の校正を終わらせておけるのに・・・
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div id="summarize">
+              <h3>
+                機械課（ペルソナ：五条）は毎回同じ項目の依頼書を書きたくない
+                <p>※ 簡単な測定依頼</p>
+              </h3>
+              <h3>
+                品質課（ペルソナ：悟）は事前に測定機器の校正をしたい
+                <p>※ 依頼を事前に確認</p>
+              </h3>
+              <img class="gojo" src="./img/五条悟.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="application">
+        <div class="app_lv1">
+          <h1 class="app_title">
+            ～Rakujan Lv.1
+            <a
+              href="https://it-trend.jp/development_tools/article/32-0022"
+              target="_blank"
+              >(イテレーション1)</a
+            >
+            ～
+          </h1>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <h2 class="slide-title">
+                  ユーザーストーリー・フローチャート（ KOROMO Learning Together
+                  での学び ）
+                </h2>
+                <ul class="flowchart">
+                  <li>
+                    <img
+                      src="./img/ユーザーストーリー・フローチャート/スライド1.JPG"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./img/ユーザーストーリー・フローチャート/スライド2.JPG"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./img/ユーザーストーリー・フローチャート/スライド3.JPG"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./img/ユーザーストーリー・フローチャート/スライド4.JPG"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <h2 class="slide-title">こだわり①</h2>
+                <ul class="item">
+                  <li>
+                    <video src="./img/lv1-1.mp4" loop autoplay muted></video>
+                  </li>
+                  <li>
+                    <div class="description">
+                      <h2 class="description_title">
+                        【 品番・測定項目の自動入力 】
+                      </h2>
+                      <p>1. 各ワークオブジェクト → 配列</p>
+                      <p>( ワーク名・品番・測定項目 )</p>
+                      <br />
+                      <p>2. 品番・測定項目に「change」イベント処理</p>
+                      <p>( 両方のイベント処理関数をリファクタリング )</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <h2 class="slide-title">こだわり②</h2>
+                <ul class="item">
+                  <li>
+                    <video src="./img/lv1-2.mp4" loop autoplay muted></video>
+                  </li>
+                  <li>
+                    <div class="description">
+                      <h2 class="description_title">【 前回複写機能 】</h2>
+                      <p>1. " localStorage " を使用</p>
+                      <br />
+                      <p>2. inputタグに'required' で未入力箇所を表示</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <h2 class="slide-title">苦労したところ</h2>
+                <ul class="item">
+                  <li>
+                    <video src="./img/lv1-3.mp4" loop autoplay muted></video>
+                  </li>
+                  <li>
+                    <div class="description">
+                      <h2 class="description_title">
+                        【 イベントデリゲーション 】
+                      </h2>
+                      <p>1. 親要素でイベントを発火させる</p>
+                      <br />
+                      <p>2. 親要素から子要素や祖先を見つけて処理</p>
+                      <p>( もっと良い方法を見つけたい・・・ )</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <a href="../Request/Request.html" class="app_link" target="_blank"
+            >Lv.1アプリを使う</a
+          >
+        </div>
+        <div class="app_lv2">
+          <h1 class="app_title">～Rakujan Lv.2 (イテレーション2) ～</h1>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <h2 class="slide-title">ユーザーストーリー・フローチャート</h2>
+                <ul class="flowchart">
+                  <li>
+                    <img
+                      src="./img/ユーザーストーリー・フローチャート/スライド5.JPG"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./img/ユーザーストーリー・フローチャート/スライド6.JPG"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./img/ユーザーストーリー・フローチャート/スライド7.JPG"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./img/ユーザーストーリー・フローチャート/スライド8.JPG"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <h2 class="slide-title">こだわり①</h2>
+                <ul class="item">
+                  <li>
+                    <video src="./img/lv2-1.mp4" loop autoplay muted></video>
+                  </li>
+                  <li>
+                    <div class="description">
+                      <h2 class="description_title">【 ログイン画面実装 】</h2>
+                      <p>1. 各ユーザーオブジェクト → 配列</p>
+                      <p>( 名前・所属コード・電話番号 )</p>
+                      <br />
+                      <p>2. findメソッドでinputデータと照合</p>
+                      <br />
+                      <p>3. setTimeoutで非同期処理</p>
+                      <p>( ユーザー名の表示 )</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <h2 class="slide-title">こだわり②</h2>
+                <ul class="item">
+                  <li>
+                    <video src="./img/lv2-2.mp4" loop autoplay muted></video>
+                  </li>
+                  <li>
+                    <div class="description">
+                      <h2 class="description_title">【 UI / UX を追及 】</h2>
+                      <p>1. 依頼時のUIを必要最小限</p>
+                      <br />
+                      <p>2. 各ワークオブジェクト → 配列</p>
+                      <p>( ワーク名・品番・各工程・目的・測定項目 )</p>
+                      <br />
+                      <p>3. setTimeoutで非同期処理</p>
+                      <p>( 測定依頼詳細の表示 )</p>
+                      <br />
+                      <p>4. 依頼履歴通知</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <h2 class="slide-title">苦労したところ</h2>
+                <ul class="item">
+                  <li>
+                    <video src="./img/lv2-3.mp4" loop autoplay muted></video>
+                  </li>
+                  <li>
+                    <div class="description">
+                      <h2 class="description_title">
+                        【 イベントデリゲーション 】
+                      </h2>
+                      <p>1. 親要素でイベントを発火させる</p>
+                      <br />
+                      <p>2. 親要素から子要素や祖先を見つけて処理</p>
+                      <p>( もっと良い方法を見つけたい・・・ )</p>
+                      <br />
+                      <h2 class="description_title">【 自作スライダー 】</h2>
+                      <p>リファクタリング → 個別にスライダーが動かない</p>
+                      <p>( ワークオブジェクト分の配列を作成し何とか解消 )</p>
+                      <p>もっと早くSwiperに出会いたかった・・・笑</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <a href="../NewRequest/login.html" class="app_link" target="_blank"
+            >Lv.2アプリを使う</a
+          >
+        </div>
+        <a href="../end/index.html" class="end" target="_blank"
+          >入門コース受講者の方へ</a
+        >
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
